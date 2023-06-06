@@ -1,4 +1,6 @@
 #Makefile
+.PHONY: brain-games
+
 install:
 	composer install
 
@@ -7,3 +9,6 @@ validate:
 
 brain-games:
 	./bin/brain-games
+	
+lint:
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
