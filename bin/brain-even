@@ -2,7 +2,5 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\EvenGame\generateNumbers;
 use function BrainGames\EvenGame\evenNumber;
-$arrNumbers = generateNumbers();
-evenNumber($arrNumbers);
+evenNumber();

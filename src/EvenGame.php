@@ -3,26 +3,17 @@ namespace BrainGames\EvenGame;
 
 use function cli\line;
 use function cli\prompt;
-
-function generateNumbers()
+use function BrainGames\Engine\generate;
+use function BrainGames\Engine\greeting;
+function evenNumber()
 {
-    $arr = [];
-    for($i = 0; $i < 3; $i++){
-        $number = random_int(1,100);
-        $arr[] = $number;
-    }
-    return $arr;
-}
-function evenNumber($arr)
-{
-  
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    $arr = generate(3, 1, 50);
+    $name = greeting();
     line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
     for($i = 0; $i < count($arr); $i++){
-        $answer = prompt("Question: {$arr[$i]}");
-        if ($answer !== "yes" && ($arr[$i] % 2 === 0)){
+        line("Question: {$arr[$i]}");
+        $answer = prompt("Your answer");
+        if ($answer !== "yes" && ($arr[$i] % 2 === 0)) {
             return line("'{$answer}' is wrong answer ;(. Correct answer was 'yes'.\n
             Let's try again, {$name}!");
         } elseif ($answer !== "no" && ($arr[$i] % 2 !== 0)) {
