@@ -29,7 +29,7 @@ function gcd()
                 }
                 line("Correct!");
                 break;
-            }
+            } 
         }
     }
     line("Congratulations, {$name}!");
