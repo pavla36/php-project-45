@@ -6,12 +6,13 @@
             "BrainGames\\Cli\\": "src/"
         },
         "files": [
-		    "src/Cli.php",
-            "src/EvenGame.php",
-            "src/CalcGame.php",
-            "src/Engine.php",
-            "src/GcdGame.php",
-            "src/ProgressionGame.php"
+		    "src/Games/Cli.php",
+            "src/Games/EvenGame.php",
+            "src/Games/CalcGame.php",
+            "src/Games/Engine.php",
+            "src/Games/GcdGame.php",
+            "src/Games/ProgressionGame.php",
+            "src/Games/PrimeGame.php"
 	    ]
 
     },
@@ -26,11 +27,12 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "src/brain-progression"
+        "src/brain-progression",
+        "src/brain-prime"
     ],
     "license": "MIT",
     "require": {
-        "wp-cli/php-cli-tools": "^0.11.18"
+        "wp-cli/php-cli-tools": "^0.11.19"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.7"
