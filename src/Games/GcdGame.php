@@ -12,6 +12,7 @@ function gcd()
     $arrNumbers = generate(3, 1, 100);
     $arrNumbers2 = generate(3, 1, 100);
     $name = greeting();
+    line("Find the greatest common divisor of given numbers.");
     for ($i = 0; $i < count($arrNumbers); $i++) {
         $min = min($arrNumbers[$i], $arrNumbers2[$i]);
         for ($j = $min; $j > 0; $j--) {
