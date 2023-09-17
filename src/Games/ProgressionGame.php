@@ -7,7 +7,7 @@ use function cli\prompt;
 use function BrainGames\Engine\generate;
 use function BrainGames\Engine\greeting;
 
-function generateProgression($startNumber, $progressionNumber, $lengthProgression)
+function generateProgression(int $startNumber, int $progressionNumber, int $lengthProgression)
 {
     $arr = [];
     for ($j = $startNumber; count($arr) <= $lengthProgression; $j += $progressionNumber) {

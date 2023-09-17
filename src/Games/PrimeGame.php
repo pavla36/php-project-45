@@ -7,7 +7,7 @@ use function cli\prompt;
 use function BrainGames\Engine\generate;
 use function BrainGames\Engine\greeting;
 
-function isPrime($number)
+function isPrime(int $number)
 {
     $coin = 0;
     for ($j = $number; $j > 0; $j--) {

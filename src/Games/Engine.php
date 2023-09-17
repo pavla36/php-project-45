@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function generate($count, $min, $max)
+function generate(int $count, int $min, int $max)
 {
     $arrNumbers = [];
     for ($i = 0; $i < $count; $i++) {
