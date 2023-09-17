@@ -27,8 +27,8 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd", 
-        "src/brain-progression",
-        "src/brain-prime"
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
     "license": "MIT",
     "require": {
